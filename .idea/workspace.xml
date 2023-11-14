@@ -5,18 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="204b9274-bc8d-422d-9fef-fe553979ebdc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/BusinessManagement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/manager/ClientManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/manager/ServiceScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/manager/StockManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/product/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/product/ProductQuantityChangeError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/prompt/GeneralPrompt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/prompt/PromptOptionExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/prompt/client/AddClientPromptOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/prompt/client/ScheduleServicePromptOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/prompt/client/ViewClientPromptOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/service/ProvidedService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/service/ProvidedServiceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/service/ScheduledService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/user/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +35,14 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -35,19 +50,28 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2Y3Q7h65zQQxc8TvaL0l7U0xXJG" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/gabriel/development/poo-business-management"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/gabriel/development/poo-business-management&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dev.gabrielsena.prompt.client" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
