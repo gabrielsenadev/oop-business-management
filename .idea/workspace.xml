@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="204b9274-bc8d-422d-9fef-fe553979ebdc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/prompt/LoopPrompt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/prompt/LoopPromptImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/prompt/client/ClientPromptOptionsCommons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/prompt/client/UpdateClientPromptOption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/prompt/client/UpdateClientServiceHistoryPromptOption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/prompt/client/servicehistory/SelectProvidedServiceType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/prompt/client/servicehistory/SetCostProvidedService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/prompt/client/servicehistory/SetProductsProvidedService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/prompt/client/ListClientsPromptOption.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/prompt/GeneralPrompt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/prompt/GeneralPrompt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/prompt/client/AddClientPromptOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/prompt/client/AddClientPromptOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/prompt/client/ViewClientPromptOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/prompt/client/ViewClientPromptOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/user/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/user/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gabrielsena/user/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +54,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="dev.gabrielsena.prompt.client.servicehistory" />
       <recent name="dev.gabrielsena.prompt.client" />
+      <recent name="dev.gabrielsena.prompt.client.servicehistory" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
