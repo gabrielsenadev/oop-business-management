@@ -9,6 +9,8 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.stream.Stream;
 
 public class ViewClientPromptOption implements PromptOptionExecutor {
@@ -24,10 +26,7 @@ public class ViewClientPromptOption implements PromptOptionExecutor {
             System.out.println("Nome do Cliente: "+ client.getName());
             System.out.println("Identificador: "+ client.getId());
             System.out.println("Número de telefone: "+ client.getPhoneNumber());
-            if (!client.getServicesHistory().isEmpty()) {
-                System.out.println("Serviços realizados:");
-                client.getServicesHistory().stream().map(c -> "TIPO: " + c.getType() + " CUSTO:" + c.getCost()).forEach(System.out::println);
-            }
+            this.printClientServiceHistory(client);
             this.printScheduledServicesByClientId(client.getId());
             return true;
         } catch (Exception e) {
@@ -47,5 +46,12 @@ public class ViewClientPromptOption implements PromptOptionExecutor {
         Stream<ScheduledService> services = BusinessManagement.getInstance().getServiceSchedulerManager().getScheduledServices().stream().filter(s -> s.getClientId() == clientId);
         System.out.println("Serviços agendados para o cliente:");
         services.map(s -> dateFormat.format(s.getTime())).forEach(System.out::println);
+    }
+
+    private void printClientServiceHistory(Client client) {
+        if (!client.getServicesHistory().isEmpty()) {
+            System.out.println("Serviços realizados:");
+            client.getServicesHistory().stream().map(c -> "TIPO: " + c.getType() + " CUSTO:" + c.getCost()).forEach(System.out::println);
+        }
     }
 }

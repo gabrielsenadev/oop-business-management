@@ -1,8 +1,6 @@
 package dev.gabrielsena.prompt;
 
-import dev.gabrielsena.prompt.client.AddClientPromptOption;
-import dev.gabrielsena.prompt.client.ScheduleServicePromptOption;
-import dev.gabrielsena.prompt.client.ViewClientPromptOption;
+import dev.gabrielsena.prompt.client.*;
 
 import java.util.Hashtable;
 import java.util.Scanner;
@@ -44,6 +42,8 @@ public class GeneralPrompt {
         executors.put(1, new AddClientPromptOption());
         executors.put(2, new ViewClientPromptOption());
         executors.put(3, new ScheduleServicePromptOption());
+        executors.put(4, new UpdateClientPromptOption());
+        executors.put(5, new UpdateClientServiceHistoryPromptOption());
 
         this.promptOptionExecutors = executors;
     }
@@ -54,6 +54,7 @@ public class GeneralPrompt {
         System.out.println("[1] Adicionar cliente");
         System.out.println("[2] Visualizar cliente");
         System.out.println("[3] Agendar serviço para o cliente");
+        
         System.out.println("[4] Atualizar cliente");
         System.out.println("[5] Inserir serviço prestado ao cliente");
         System.out.println("[6] Listar clientes");

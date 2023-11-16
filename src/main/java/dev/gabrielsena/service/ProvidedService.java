@@ -8,11 +8,11 @@ public class ProvidedService {
 
     private ProvidedServiceType type;
     private ArrayList<Product> products;
-    private int cost;
+    private float cost;
 
     private int clientId;
 
-    public ProvidedService(int clientId, ProvidedServiceType type, ArrayList<Product> products, int cost) {
+    public ProvidedService(int clientId, ProvidedServiceType type, ArrayList<Product> products, float cost) {
         this.clientId = clientId;
         this.type = type;
         this.products = products;
@@ -27,7 +27,7 @@ public class ProvidedService {
         return type;
     }
 
-    public int getCost() {
+    public float getCost() {
         return cost;
     }
 
