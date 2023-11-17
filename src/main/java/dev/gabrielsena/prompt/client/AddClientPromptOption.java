@@ -2,7 +2,7 @@ package dev.gabrielsena.prompt.client;
 
 import dev.gabrielsena.BusinessManagement;
 import dev.gabrielsena.prompt.PromptOptionExecutor;
-import dev.gabrielsena.user.Client;
+import dev.gabrielsena.client.Client;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -20,5 +20,10 @@ public class AddClientPromptOption implements PromptOptionExecutor {
         String successClientCreatedMessage = "Cliente " + client.getName() + " de identificador " + client.getId() + " do número de telefone " + client.getPhoneNumber() + " criado com sucesso!";
         System.out.println(successClientCreatedMessage);
         return true;
+    }
+
+    @Override
+    public String getTitle() {
+        return "Adicionar cliente";
     }
 }

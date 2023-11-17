@@ -1,6 +1,6 @@
 package dev.gabrielsena.prompt;
 
-public interface LoopPromptImpl {
+public interface LoopPromptStructure {
 
     Object execute(String line);
     void printInfos();

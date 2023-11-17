@@ -3,7 +3,7 @@ package dev.gabrielsena.prompt.client;
 import dev.gabrielsena.BusinessManagement;
 import dev.gabrielsena.prompt.PromptOptionExecutor;
 import dev.gabrielsena.service.ScheduledService;
-import dev.gabrielsena.user.Client;
+import dev.gabrielsena.client.Client;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -38,5 +38,10 @@ public class ScheduleServicePromptOption implements PromptOptionExecutor {
             }
             return false;
         }
+    }
+
+    @Override
+    public String getTitle() {
+        return "Agendar serviço para o cliente";
     }
 }

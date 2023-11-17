@@ -3,14 +3,11 @@ package dev.gabrielsena.prompt.client;
 import dev.gabrielsena.BusinessManagement;
 import dev.gabrielsena.prompt.PromptOptionExecutor;
 import dev.gabrielsena.service.ScheduledService;
-import dev.gabrielsena.user.Client;
+import dev.gabrielsena.client.Client;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.stream.Stream;
 
 public class ViewClientPromptOption implements PromptOptionExecutor {
@@ -51,7 +48,13 @@ public class ViewClientPromptOption implements PromptOptionExecutor {
     private void printClientServiceHistory(Client client) {
         if (!client.getServicesHistory().isEmpty()) {
             System.out.println("Serviços realizados:");
-            client.getServicesHistory().stream().map(c -> "TIPO: " + c.getType() + " CUSTO:" + c.getCost()).forEach(System.out::println);
+            System.out.println("TIPO   CUSTO");
+            client.getServicesHistory().stream().map(c -> c.getType() + "   " + c.getCost()).forEach(System.out::println);
         }
+    }
+
+    @Override
+    public String getTitle() {
+        return "Visualizar dados do cliente";
     }
 }

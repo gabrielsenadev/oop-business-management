@@ -3,11 +3,13 @@ package dev.gabrielsena.prompt.client.servicehistory;
 import dev.gabrielsena.BusinessManagement;
 import dev.gabrielsena.product.Product;
 import dev.gabrielsena.prompt.LoopPrompt;
+import dev.gabrielsena.prompt.product.ProductCommons;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class SetProductsProvidedService extends LoopPrompt {
 
@@ -22,13 +24,13 @@ public class SetProductsProvidedService extends LoopPrompt {
             return null;
         }
         List<Integer> productsIds = Arrays.stream(line.split(",")).map(Integer::parseInt).toList();
-        return BusinessManagement.getInstance().getStockManager().getProducts().stream().filter(product -> product.getQuantity() > 0 && productsIds.contains(product.getId())).toList();
+        return BusinessManagement.getInstance().getStockManager().getProducts().stream().filter(product -> product.getQuantity() > 0 && productsIds.contains(product.getId())).collect(Collectors.toList());
     }
 
     @Override
     public void printInfos() {
         System.out.println("Lista de produtos:");
-        BusinessManagement.getInstance().getStockManager().getProducts().stream().map(product -> "PRODUTO ID:" + product.getId()+"NOME: "+ product.getName() + " QUANTIDADE: "+product.getQuantity()).forEach(System.out::println);
+        ProductCommons.printProducts(false);
         System.out.println("Digite os produtos, separados por vírgula, exemplo: 1,2,3,4");
         System.out.println("Os produtos que não existirem, serão ignorados.");
     }

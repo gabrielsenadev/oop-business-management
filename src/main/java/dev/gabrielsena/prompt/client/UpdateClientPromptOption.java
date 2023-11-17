@@ -2,13 +2,10 @@ package dev.gabrielsena.prompt.client;
 
 import dev.gabrielsena.BusinessManagement;
 import dev.gabrielsena.prompt.PromptOptionExecutor;
-import dev.gabrielsena.service.ScheduledService;
-import dev.gabrielsena.user.Client;
+import dev.gabrielsena.client.Client;
 
-import java.text.SimpleDateFormat;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
-import java.util.stream.Stream;
 
 public class UpdateClientPromptOption implements PromptOptionExecutor {
 
@@ -43,5 +40,10 @@ public class UpdateClientPromptOption implements PromptOptionExecutor {
 
     private boolean isCancelCommand(String input) {
         return input.equalsIgnoreCase("C");
+    }
+
+    @Override
+    public String getTitle() {
+        return "Atualizar dados do cliente";
     }
 }

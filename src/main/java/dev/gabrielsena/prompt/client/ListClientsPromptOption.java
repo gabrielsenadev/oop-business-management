@@ -2,13 +2,6 @@ package dev.gabrielsena.prompt.client;
 
 import dev.gabrielsena.BusinessManagement;
 import dev.gabrielsena.prompt.PromptOptionExecutor;
-import dev.gabrielsena.service.ScheduledService;
-import dev.gabrielsena.user.Client;
-
-import java.text.SimpleDateFormat;
-import java.util.NoSuchElementException;
-import java.util.Scanner;
-import java.util.stream.Stream;
 
 public class ListClientsPromptOption implements PromptOptionExecutor {
 
@@ -23,4 +16,8 @@ public class ListClientsPromptOption implements PromptOptionExecutor {
         return true;
     }
 
+    @Override
+    public String getTitle() {
+        return "Listar clientes";
+    }
 }

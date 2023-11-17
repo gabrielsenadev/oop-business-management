@@ -19,10 +19,6 @@ public class ProvidedService {
         this.cost = cost;
     }
 
-    public ArrayList<Product> getProducts() {
-        return products;
-    }
-
     public ProvidedServiceType getType() {
         return type;
     }
@@ -31,7 +27,4 @@ public class ProvidedService {
         return cost;
     }
 
-    public int getClientId() {
-        return clientId;
-    }
 }

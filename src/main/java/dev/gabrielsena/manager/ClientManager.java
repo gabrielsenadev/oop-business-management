@@ -1,6 +1,6 @@
 package dev.gabrielsena.manager;
 
-import dev.gabrielsena.user.Client;
+import dev.gabrielsena.client.Client;
 
 import java.util.ArrayList;
 

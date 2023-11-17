@@ -8,7 +8,7 @@ import dev.gabrielsena.prompt.client.servicehistory.SetCostProvidedService;
 import dev.gabrielsena.prompt.client.servicehistory.SetProductsProvidedService;
 import dev.gabrielsena.service.ProvidedService;
 import dev.gabrielsena.service.ProvidedServiceType;
-import dev.gabrielsena.user.Client;
+import dev.gabrielsena.client.Client;
 
 import java.util.*;
 
@@ -44,6 +44,7 @@ public class UpdateClientServiceHistoryPromptOption implements PromptOptionExecu
             ProvidedServiceType parsedServiceType = ProvidedServiceType.values()[serviceTypeInt - 1];
             ProvidedService providedService = new ProvidedService(client.getId(), parsedServiceType, products, (float) serviceCost);
             products.forEach(Product::removeOne);
+            products.stream().filter(product -> product.getQuantity() <= 1).forEach(product -> System.out.println("O produto "+ product.getName() + " está com pouca quantidade."));
             client.getServicesHistory().add(providedService);
             System.out.println("Pronto! Serviço adicionado no histórico do cliente.");
             return true;
@@ -54,5 +55,10 @@ public class UpdateClientServiceHistoryPromptOption implements PromptOptionExecu
             }
             return false;
         }
+    }
+
+    @Override
+    public String getTitle() {
+        return "Adicionar serviço prestado ao cliente";
     }
 }

@@ -24,13 +24,6 @@ public class Product {
         return quantity;
     }
 
-    public void updateQuantity(int quantity) {
-        if (quantity < 0) {
-            throw new ProductQuantityChangeError();
-        }
-        this.quantity = quantity;
-    }
-
     public void removeOne() {
         if (this.quantity - 1 < 0) {
             throw new ProductQuantityChangeError();
@@ -38,7 +31,7 @@ public class Product {
         this.quantity -= 1;
     }
 
-    public void addOne() {
-        this.quantity += 1;
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 }

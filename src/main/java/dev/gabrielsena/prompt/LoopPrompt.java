@@ -1,9 +1,8 @@
 package dev.gabrielsena.prompt;
 
-import java.util.Objects;
 import java.util.Scanner;
 
-public abstract class LoopPrompt implements LoopPromptImpl{
+public abstract class LoopPrompt implements LoopPromptStructure {
 
     private final Scanner scanner;
 

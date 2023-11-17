@@ -1,5 +1,9 @@
 plugins {
     id("java")
+    application
+}
+application {
+    mainClass = "dev.gabrielsena.Main"
 }
 
 group = "dev.gabrielsena"
@@ -16,4 +20,8 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+tasks.jar {
+    manifest.attributes(mapOf(Pair("Main-Class", "dev.gabrielsena.Main")))
 }
